@@ -1,28 +1,47 @@
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Pixel</title>
-		<link rel="stylesheet" href="css/index.css" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="css/slidedeck/slidedeck.skin.css" media="screen" />
-		<link rel="stylesheet" href="css/literally/skin.css" type="text/css" media="screen">
+		<title>:: Alla ricerca del Pixel perduto ::</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+		<link rel="stylesheet"  href="css/slidedeck/slidedeck.skin.css"  type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/literally/skin.css" type="text/css" media="screen" />
 		<!-- Styles for the skin that only load for Internet Explorer -->
 		<!--[if lte IE 8]>
 		<link rel="stylesheet" type="text/css" href="css/slidedesk/slidedeck.skin.ie.css" media="screen,handheld" />
 		<![endif]-->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="css/slidedeck/jquery-1.3.2.min.js"></script>
 		<script type="text/javascript" src="css/slidedeck/slidedeck.jquery.lite.js"></script>
 	</head>
 	<body>
+	
+		<!-- Header Section -->
 		<div id="header">		
 			<img src="img/logo.png" style="margin-left:auto" />
 		</div>
+		<!-- End Header Section -->		
+		
+		<!-- Main Content Section -->
 		<div id="content">
 			<div id="box">
-				<div id="slidedeck_frame" class="skin-slidedeck">
-				    <dl class="slidedeck">
+				<img src="img/bg_box.png" style="position: absolute" />
+				
+				<!-- Slider Slidekick -->
+				<div id="slidedeck_frame" class="skin-slidedeck" style="height:400px">
+					
+				    <dl class="slidedeck">	
+				    		<dt>
+				    			<h1>Benvenuto</h1>
+				    		</dt>
+				    		<dd>
+				    			<div style="margin-top: 10px">
+					    		    <div class="description lastDesc" style:"font-size: 32px; font-color: #000;">
+					    		    	Benvenuto!
+					    		    </div>
+				    		    </div>	
+				    		</dd>
+				    
 					        <dt>
 					        	<h1>Leo</h1>
 					        </dt>
@@ -71,9 +90,11 @@
 						        	<br/>
 						        	<div class="description lastDesc">Tilde &egrave; dolce e sensibile. Le piace la compagnia e ogni occasione &egrave; buona per farsi nuovi amici. La incuriosiscono le novit&agrave; e le piace capire tutto, specialmente ci&ograve; che riguarda l'amatissimo mondo degli animali.
 						        	</div>
-						        <div style="margin-top: 10px">
+						        </div>
 					        </dd>
-					        <dt><h1>Albert</h1></dt>
+					        <dt>
+					        	<h1>Albert</h1>
+					        </dt>
 					        <dd>
 					        	<img src="img/dummy.png" class="detail"/>
 						        <div style="margin-top: 10px">
@@ -96,7 +117,9 @@
 						        	</div>
 						        </div>
 					        </dd>
-					        <dt><h1>Pixel</h1></dt>
+					        <dt>
+					        	<h1>Pixel</h1>
+					        </dt>
 					        <dd>
 					        	<img src="img/dummy.png" class="detail"/>
 						        <div style="margin-top: 10px">
@@ -119,7 +142,9 @@
 						        	</div>
 								</div>
 					        </dd>
-					        <dt><h1>Robocat</h1></dt>
+					        <dt>
+					        	<h1>Robocat</h1>
+					        </dt>
 					        <dd>
 					        	<img src="img/dummy.png" class="detail"/>
 					        	<div style="margin-top: 10px">
@@ -137,12 +162,11 @@
 						        	<br />
 						        	<span class="field plate">Piatto preferito:</span>
 						        	<span class="description">10010100110010001111</span><br/>
-						        	<div class="description lastDesc">Robocat ha le sembianze di una gattina ma &egrave; un sofisticato dispositivo in via di sperimentazione. Ha un cuore elettronico che pulsa...</div>
-								</div>
-					        </dd>
-					    </div>    
-				    </dl>
-				    	
+						        	<div class="description lastDesc">Robocat ha le sembianze di una gattina ma &egrave; un sofisticato dispositivo in via di sperimentazione. Ha un cuore elettronico che pulsa...
+						        	</div>
+								 </div>
+							 </dd>
+				   	</dl>				   	
 				</div>
 				<script type="text/javascript">
 				    
@@ -157,34 +181,41 @@
 				        index: false
 				    });
 				</script>
-				<!-- Help support SlideDeck! Place this noscript tag on your page when you deploy a SlideDeck to provide a link back! -->
 				<noscript>
 				    You better use a Javascript enabled browser, like Chrome or Firefox. Cheers.
 				</noscript>
-				
 			</div>
-			<!--
+			<!-- End slider -->
+			    	
+			<!-- Social Networks Icons --> 
 			<div id="social">
 				<a href="https://www.facebook.com/event.php?eid=300617296620968" />
 					<img src="img/fb.png" />
 				</a>
 				<a href="https://twitter.com/#!/openmediacenter" />
-					<img src="img/twitter.png" />
+					<img src="img/twitter.png" id="twitter"/>
 				</a>
 			</div>
-			-->
+			<!-- End Social Network Section -->
+			
 		</div>
-		<div id="footer"></div>
-			<div class="logos">
-				<a href="http://www.labomc.it">
-					<img src="img/labomc.png" />
-				</a>
-				<a href="http://www.crs4.it">
-					<img src="img/crs4.png" />
-				</a>
-				<a href="http://www.sardegnaricerche.it">
-					<img src="img/sardegna_ricerche.png" class="vertical" />
-				</a>	
-			</div>
+		<!-- End Content Div -->
+			
+		<!-- Footer Logo Section -->
+		<div class="logos">
+			<a href="http://www.labomc.it">
+				<img id="labomc" src="img/labomc.png"  />
+			</a>
+			<a href="http://www.crs4.it">
+				<img id="crs4" src="img/crs4.png" />
+			</a>
+			<!--	
+			<a href="http://www.sardegnaricerche.it">
+				<img src="img/sardegna_ricerche.png" class="vertical" />
+			</a>
+			-->	
+			
+		</div>
+		<!-- End Footer Logo Section -->
 	</body>
 </html>	
