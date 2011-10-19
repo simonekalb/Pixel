@@ -33,6 +33,26 @@ div#box {
 	z-index: -3;
 	
 }
+.skin-slidedeck dl.slidedeck h1#one {
+	color: #3c4ace;
+}
+
+.skin-slidedeck dl.slidedeck h1#two {
+	color: #e44048;
+} 
+
+.skin-slidedeck dl.slidedeck h1#three {
+	color: #c329d5;
+}
+
+.skin-slidedeck dl.slidedeck h1#four {
+	color: #d57337;
+}
+
+.skin-slidedeck dl.slidedeck h1#five {
+	color: #e0cf14;
+}
+  
 
 .detail {
 	margin-left: 15px;
@@ -99,7 +119,6 @@ img.detail.big {
 
 social img {
 	border: 0px;
-	border-color: #CCC;
 }
 
 social img #twitter {

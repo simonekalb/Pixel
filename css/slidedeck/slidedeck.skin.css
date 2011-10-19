@@ -15,6 +15,7 @@ Tags: flexible, white, black, multi-color
  * surrounding your SlideDeck.
  */
 .skin-slidedeck {
+	height:400px;
     position: relative;
 	padding: 11px;
     background: url('back.png') 0 0 #d7d7d7;
@@ -102,7 +103,7 @@ Tags: flexible, white, black, multi-color
  * The hovered state of a SlideDeck spine.
  */
 .skin-slidedeck dl.slidedeck dt.spine:hover {
-	color: #000;
+	color: #;
 	background-position: center left;
 }
 
@@ -112,7 +113,7 @@ Tags: flexible, white, black, multi-color
 .skin-slidedeck dl.slidedeck dt.spine.active,
 .skin-slidedeck dl.slidedeck dt.spine.active:hover {
 	cursor: default;
-	color: #fff;
+	color: #FFF;
 	background-position: bottom left;
 }
 
@@ -151,7 +152,7 @@ Tags: flexible, white, black, multi-color
  */
 .skin-slidedeck dl.slidedeck .activeCorner {
 	margin-left: -6px;
-	background-image: url('corner.png');
+	background-image: url('corner_blue.png');
 	width: 12px;
 	height: 25px;
 }
