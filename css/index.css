@@ -146,13 +146,12 @@ img.detail.big {
 }
 
 .lastDesc {
-	letter-spacing: 0.1em;
+	letter-spacing: 1.5px;
 	margin-top: 20px;
 	text-decoration: none;
 }
 
 .firstPage {
-	margin-top: 0px;
 	margin-left: 17px;
 }
 
@@ -182,6 +181,7 @@ img.detail.big {
 
 .logos img {
 	border: 0px;
+	vertical-align: middle;
 }
 
 .logos a{
