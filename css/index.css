@@ -103,7 +103,7 @@ img.detail.big {
 	margin-right: 0px;
 	margin-top: auto;
 	text-align: center;
-	width: 575px;
+	width: 500px;
 	height: 150px;
 	float: none;
 }
@@ -138,6 +138,14 @@ img.detail.big {
 }
 
 .description span {
+	color: #dd3939;
+}
+
+.description p{
+	margin-bottom: 10px;
+}
+
+.description p a:active a:hover a:visited {
 	color: #dd3939;
 }
 
