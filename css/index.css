@@ -6,8 +6,9 @@
 body {
 	//background: rgba(209, 239, 245, 0.6);
 	background-color: #FFF;
-
+	overflow: hidden;
 }
+
 div#mainContainer {
 	width: 920px;
 	margin: auto;
@@ -15,7 +16,7 @@ div#mainContainer {
 }
 
 div#header {
-	z-index: -9999;
+	height: 706px;
 	text-align: center;
 	background-image: url('../img/bg.png');
 	background-position: top center;
@@ -25,12 +26,11 @@ div#header {
 	
 }
 
-img#photo_group {
-	position: absolute; 
-	resize: both;
-	top: 190px; 
-	left: -14%; 
-	z-index:0;
+#photo_group {
+	position: relative;
+	top: -488.4px;
+	left: -50%;
+	z-index: 0;
 }
 
 img#logo {
@@ -44,104 +44,6 @@ img#logos_bg{
 	position: relative;
 	top: 4px;
 	left: -28%;
-}
-
-
-div#content {
-	//margin-top: 25px;
-	margin-top: 395px;
-	background-color: #b2c992;
-	
-}
-
-div#box {
-	background-image: url('../img/bg.png');
-	background-position: top center;
-	margin: auto;
-	width: 960px;
-	height: 450px;
-	border: none;
-	outline: none;	
-}
-
-#box img {
-	z-index: -3;
-}
-
-#box a a:hover a:active a:visited {
-	text-decoration: none;
-	border: none;
-	outline: none;
-}
-
-.skin-slidedeck dl.slidedeck #leo {
-	color: #3c4ace;
-}
-
-.skin-slidedeck dl.slidedeck #leo.active {
-	color: #FFF;
-}
-
-
-.skin-slidedeck dl.slidedeck #tilde {
-	color: #e44048;
-} 
-
-.skin-slidedeck dl.slidedeck #tilde.active {
-	color: #FFF;
-}
-
-.skin-slidedeck dl.slidedeck #albert {
-	color: #0c831d;
-}
-
-.skin-slidedeck dl.slidedeck #albert.active {
-	color: #FFF;
-}
-
-.skin-slidedeck dl.slidedeck #pixel {
-	color: #fc9004;
-}
-
-.skin-slidedeck dl.slidedeck #pixel.active {
-	color: #FFF;
-}
-
-.skin-slidedeck dl.slidedeck #robocat {
-	color: #e0cf14;
-}
-
-.skin-slidedeck dl.slidedeck #robocat.active {
-	color: #FFF;
-}
-  
-
-.detail {
-	margin-left: 15px;
-}
-
-
-img.detail {
-	width: 200px;
-	height: 200px;
-	border: 3px #b2c992 solid;
-	margin-right: 15px;
-	margin-top: 15px;
-	float: left;
-	box-shadow: 5px 5px 5px #888;
-	-moz-box-shadow: 5px 5px 5px #888;
-	-webkit-box-shadow: 5px 5px 5px #888;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-}
-
-img.detail.big {
-	margin-right: 0px;
-	margin-top: auto;
-	text-align: center;
-	width: 500px;
-	height: 150px;
-	float: none;
 }
 
 .field {
@@ -160,7 +62,7 @@ img.detail.big {
 	color: #081c66;
 	line-height: 1.5em;
 }
-
+/*
 .description a {
 	text-decoration: none;
 }
@@ -184,24 +86,20 @@ img.detail.big {
 .description p a:active a:hover a:visited {
 	color: #dd3939;
 }
-
+*/
+/*
 .tilde {
 	margin-top: 10px;
 	letter-spacing: 1.5px;
 	text-decoration: none;
 }
-
+*/
 .lastDesc {
 	letter-spacing: 1.5px;
 	margin-top: 11px;
 	text-decoration: none;
 }
 
-.firstPage {
-	margin-left: 17px;
-	margin-top: 12px;
-	
-}
 
 #social {
 	
@@ -239,19 +137,12 @@ img.detail.big {
 
 
 
-
-
-
-
-
-
 /** DIV delle specifiche del box che deve visualizzare le informazioni per ogni personaggio */
 div.picture {
 	width: 381px;
 	height: 232px;
 	position: absolute;
 	top: 423px;
-	left: 18.5%;
 	border: 15px #f9c002 solid;
 	//border-left: 0px;
 	/*
@@ -268,6 +159,7 @@ div.picture {
 	padding: 10px;
 	letter-spacing: 1px;
 	display: none;
+	margin-left: -15px;
 }
 
 div.picture .field {
@@ -285,37 +177,41 @@ div.picture .description .lastDesc {
 }
 
 div.footer img{
-	position: relative;
+	position: absolute;
 	z-index: 3;
-	margin-left: 12px;
-	margin-top: -24px;
+	margin-left: 0;
+	margin-top: 0;
+	top: 741px;
 }
 
 div.label {
-	position: absolute;
-	left: 9.3%;
+	position: relative;
+	left: -120px;
+	top: 40px;
+	float: left;
 }
-
+/*
 div.label.robocat {
-	top: 60px;
+	top: 134px;	
 }
 
 div.label.pixel {
-	top: 190px;
+	top: -128px;
 }
 
 div.label.leo {
-	top: 320px;
+	top: -390px;
 }
 
 div.label.tilde {
-	top: 440px;
+	top: -789px;
 }
 
 div.label.albert {
-	top: 580px;
+	top: -797px;
 }
 
+*/
 div.label img.content {
 	//padding: 10px;
 	margin-left: 25px;
