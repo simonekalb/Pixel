@@ -4,7 +4,6 @@
 }
 
 body {
-	//background: rgba(209, 239, 245, 0.6);
 	background-color: #FFF;
 	overflow: hidden;
 }
@@ -17,7 +16,6 @@ div#mainContainer {
 
 div#header {
 	height: 706px;
-	text-align: center;
 	background-image: url('../img/bg.png');
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -28,7 +26,7 @@ div#header {
 
 #photo_group {
 	position: relative;
-	top: -488.4px;
+	top: -493.4px;
 	left: -50%;
 	z-index: 0;
 }
@@ -62,44 +60,6 @@ img#logos_bg{
 	color: #081c66;
 	line-height: 1.5em;
 }
-/*
-.description a {
-	text-decoration: none;
-}
-
-.description a:active a:hover {
-	color: #39c3dd;
-}
-
-.description a:visited {
-	color: #dd3939;
-}
-
-.description span {
-	color: #dd3939;
-}
-
-.description p{
-	margin-bottom: 10px;
-}
-
-.description p a:active a:hover a:visited {
-	color: #dd3939;
-}
-*/
-/*
-.tilde {
-	margin-top: 10px;
-	letter-spacing: 1.5px;
-	text-decoration: none;
-}
-*/
-.lastDesc {
-	letter-spacing: 1.5px;
-	margin-top: 11px;
-	text-decoration: none;
-}
-
 
 #social {
 	
@@ -135,21 +95,12 @@ img#logos_bg{
 	text-decoration: none;
 }
 
-
-
-/** DIV delle specifiche del box che deve visualizzare le informazioni per ogni personaggio */
 div.picture {
 	width: 381px;
 	height: 232px;
 	position: absolute;
 	top: 423px;
 	border: 15px #f9c002 solid;
-	//border-left: 0px;
-	/*
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-left : 8px;
-	*/
 	background-color:#FFF;
 	opacity:0.7;
 	filter:alpha(opacity=70); /* For IE8 and earlier */
@@ -171,9 +122,11 @@ div.picture .description{
 	font-weight: 600;
 }
 
-div.picture .description .lastDesc {
-	line-height: 1em;
-	letter-spacing: 1px;
+div.picture .lastDesc {
+	line-height: 1.2em;
+	letter-spacing: 1.5px;
+	margin-top: 11px;
+	text-decoration: none;
 }
 
 div.footer img{
@@ -189,33 +142,14 @@ div.label {
 	left: -120px;
 	top: 40px;
 	float: left;
-}
-/*
-div.label.robocat {
-	top: 134px;	
+	z-index: 999;
 }
 
-div.label.pixel {
-	top: -128px;
+div.picture.description.intro {
+	font-size: 1.1em;
 }
 
-div.label.leo {
-	top: -390px;
+div.picture.description.intro a, a:hover, a:visited, a:active {
+	color: #f9c002;
+	text-decoration: none;
 }
-
-div.label.tilde {
-	top: -789px;
-}
-
-div.label.albert {
-	top: -797px;
-}
-
-*/
-div.label img.content {
-	//padding: 10px;
-	margin-left: 25px;
-	margin-top: 8px;
-	//width: 6%;	
-}
-
