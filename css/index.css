@@ -1,3 +1,14 @@
+/****************************************
+*
+* $filename: index.css
+* $author: Simone Kalb
+* $email: kalb@crs4.it
+* $date: 10/28/2011
+* $licence: GPL 2.0
+* $licence_website:http://bit.ly/uaphoL
+*
+*****************************************/
+
 * {
 	margin: 0px;
 		
@@ -150,6 +161,6 @@ div.picture.description.intro {
 }
 
 div.picture.description.intro a, a:hover, a:visited, a:active {
-	color: #f9c002;
+	color: #334e0e;
 	text-decoration: none;
 }
