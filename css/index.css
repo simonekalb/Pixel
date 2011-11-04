@@ -4,42 +4,58 @@
 * $author: Simone Kalb
 * $email: kalb@crs4.it
 * $date: 10/28/2011
-* $licence: GPL 2.0
-* $licence_website:http://bit.ly/uaphoL
 *
 *****************************************/
 
 * {
 	margin: 0px;
-		
 }
 
 body {
 	background-color: #FFF;
-	overflow: hidden;
 }
 
 div#mainContainer {
+	position: relative;
 	width: 920px;
 	margin: auto;
-	-webkit-box-shadow: 1px 1px 1px 2px #888;
-}
-
-div#header {
-	height: 706px;
+	height: 719px;
 	background-image: url('../img/bg.png');
 	background-position: top center;
 	background-repeat: no-repeat;
 	border: 25px #f9c002 solid;
 	border-bottom: 0px;
-	
+}
+
+div.label {
+	position: relative;
+	left: -145px;
+	top: 15px;
+	float: left;
+	z-index: 999;
+	cursor: pointer;
+}
+
+div#corners {
+	position: relative;
+	top: -4px;
+}
+
+#top_right_corner{
+	position: absolute;
+	left: 0px;
+}
+
+#top_left_corner{
+	position: absolute;
+	right: -3px;
 }
 
 #photo_group {
-	position: relative;
-	top: -493.4px;
-	left: -50%;
-	z-index: 0;
+	position: absolute;
+	top: 203px;
+	left: 50%;
+	z-index: 1;
 }
 
 img#logo {
@@ -72,10 +88,10 @@ img#logos_bg{
 	line-height: 1.5em;
 }
 
-#social {
-	
+#social {	
+	background: #e8e8e8;
 	text-align: center;
-	margin: 60px ;
+	margin-left: -104px;
 }
 
 #social a {
@@ -106,11 +122,26 @@ img#logos_bg{
 	text-decoration: none;
 }
 
+ul{
+	background-image: url('img/tab_home.png') center center;
+	list-style-type: none;
+	font-family: 'Chivo', sans-serif;
+	font-size: 14px;
+	color: #f9c002;
+	font-weight: 800;
+	
+}
+li {
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+
 div.picture {
 	width: 381px;
 	height: 232px;
 	position: absolute;
-	top: 423px;
+	top: 385px;
 	border: 15px #f9c002 solid;
 	background-color:#FFF;
 	opacity:0.7;
@@ -140,22 +171,6 @@ div.picture .lastDesc {
 	text-decoration: none;
 }
 
-div.footer img{
-	position: absolute;
-	z-index: 3;
-	margin-left: 0;
-	margin-top: 0;
-	top: 741px;
-}
-
-div.label {
-	position: relative;
-	left: -120px;
-	top: 40px;
-	float: left;
-	z-index: 999;
-}
-
 div.picture.description.intro {
 	font-size: 1.1em;
 }
@@ -163,4 +178,39 @@ div.picture.description.intro {
 div.picture.description.intro a, a:hover, a:visited, a:active {
 	color: #334e0e;
 	text-decoration: none;
+}
+
+div.picture.description.credits a, a:hover, a:visited, a:active {
+	color: #334e0e;
+	text-decoration: none;
+}
+
+
+div.footer {
+	top: 322px;
+	background: #e8e8e8 url('../img/footer_bg.png') repeat-x;
+	width: 100%;
+	height: 125px;
+}
+
+div.footer img{
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: 20px;
+	top: 0;	
+	vertical-align: middle;
+	border: none;
+}
+
+div.footer img#home, img#credits img#video{
+	vertical-align: top;
+	z-index: 999;
+	cursor: pointer;
+}
+
+div.footer div#buttons {
+	background: #E8E8E8;
+	position: absolute;
+	right: 16%;
+	padding: 9px;
 }

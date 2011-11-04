@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <!--
 /****************************************
 *
@@ -6,8 +6,6 @@
 * $author: Simone Kalb
 * $email: kalb@crs4.it
 * $date: 10/28/2011
-* $licence: GPL 2.0
-* $licence_website:http://bit.ly/uaphoL
 *
 *****************************************/
 -->
@@ -16,53 +14,137 @@
 		<title>:: Alla ricerca del Pixel perduto ::</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Simone Kalb" />
+		<meta property="fb:admins" content="717880706" />
+		<meta property="fb:app_id" content="171222119635513" />
 		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:400,800,700,600' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssbase/cssbase-min.css">
 		<meta name="viewport" content="width=1600" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" / >
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" / >
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$(".picture.intro").show("slide", { direction: "right" }, 1000);
-			$(".leo").click(function(){
+			
+			$(".footer #home").click(function(){
+				$(".picture").fadeOut("fast");
+				$(".picture.intro").show("slide", { direction: "right" }, 1000);
+				
+			});	
+			
+			$(".footer #credits").click(function(){
+				$(".picture").fadeOut("fast");
+				$(".picture.description.credits").css("font-size","0.9em");
+				$(".picture.description.credits").show("slide", { direction: "right" }, 1000);
+			});
+			
+			$(".footer #video").click(function(){
+				$(".picture").fadeOut("fast");
+				$(".picture.description.video").css("font-size","1.2em");
+				$(".picture.description.video").show("slide", { direction: "right" }, 1000);
+			});	
+			
+			$(".label .leo").click(function(){
 		
 				  $(".picture").fadeOut("fast");
 				  $(".picture.leo").show("slide", { direction: "right" }, 1000);
 			  
 			});
-			$(".tilde").click(function(){
+			$(".label .tilde").click(function(){
 			
 				  $(".picture").fadeOut("fast");
 				  $(".picture.tilde").show("slide", { direction: "right" }, 1000);
 				  
 			});
 			
-			$(".albert").click(function(){
+			$(".label .albert").click(function(){
 				  
 				  $(".picture").fadeOut("fast");
 				  $(".picture.albert").show("slide", { direction: "right" }, 1000);
 				  
 			});
 			
-			$(".pixel").click(function(){
+			$(".label .pixel").click(function(){
 				  
 				  $(".picture").fadeOut("fast");
 				  $(".picture.pixel").show("slide", { direction: "right" }, 1000);
 			});
 			
-			$(".robocat").click(function(){
+			$(".label .robocat").click(function(){
 				  
 				  $(".picture").fadeOut("fast");
 				  $(".picture.robocat").show("slide", { direction: "right" }, 1000);
 				  
 			});
 			
+			$(".footer #home").hover(function(){
+				$(this).attr("src","img/home_hover.png");
+			});
+			
+			$(".footer #credits").hover(function(){
+				$(this).attr("src","img/credits_hover.png");
+			});	
+			
+			$(".footer #home").mouseout(function(){
+				$(this).attr("src","img/home.png");
+			});
+			
+			$(".footer #credits").mouseout(function(){
+				$(this).attr("src","img/credits.png");
+			});	
+			
+			$(".footer #video").hover(function(){
+				$(this).attr("src","img/video_hover.png");
+			});
+			
+			$(".footer #video").mouseout(function(){
+				$(this).attr("src","img/video.png");
+			});
+			
 		});
+		</script>
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-26763034-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
 		</script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : 'Pixelstory', // App ID
+		      channelURL : '//labomc.it/pixelstory/channel.html', // Channel File
+		      status     : true, // check login status
+		      cookie     : true, // enable cookies to allow the server to access the session
+		      oauth      : true, // enable OAuth 2.0
+		      xfbml      : true  // parse XFBML
+		    });
 		
+		    // Additional initialization code here
+		  };
+		
+		  // Load the SDK Asynchronously
+		  (function(d, s, id) {
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) {return;}
+		    js = d.createElement(s); js.id = id;
+		    js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=171222119635513";
+		    fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<!-- Main Content Section -->
 		<div id="mainContainer">
 			<!-- Header Section -->
@@ -83,115 +165,154 @@
 					<img src="img/label_robocat.png" alt="label Robocat"/>		
 				</div>
 			</div>
-			<div id="header">		
-				<img id="logo" src="img/titolo.png" alt="Header"/>
-				<img id="photo_group" src="img/photo_group_footer.png" alt="Photo Group" />	
-				<img id="logos_bg" src="img/logos_bg.png" alt="Logos" />
-				<div class="footer"> 
-					<img src="img/logos.png" alt="logos companies"/>
+			<div id="corners">
+				<img id="top_right_corner" src="img/px_tr.png" alt="top right corner" />
+				<img id="top_left_corner" src="img/px_tl.png" alt="top left corner" />
+			</div>			
+			<img id="logo" src="img/titolo.png" alt="Header"/>
+			<div class="picture leo" >
+				<span class="field">Nome:&nbsp; </span>
+				<span class="description">Leonardo, ma a lui piace essere chiamato Leo</span>
+				<br /> 
+				<span class="field">Et&agrave;:&nbsp;</span>
+				<span class="description">8 Anni</span>
+				<br /> 
+				<span class="field">Hobby:&nbsp;</span>
+				<span class="description">Astrofisica, Informatica e Videogiochi</span>
+				<br />
+				<span class="field">Aspirazioni:&nbsp;</span>
+				<span class="description">Diventare scienziato come la mamma</span>
+				<br />
+				<span class="field">Piatto preferito:&nbsp;</span>
+				<span class="description">Pizza con patatine</span>
+				<br/>
+				<div class="description lastDesc">Leo &egrave; sempre attivo e dinamico. Adora la tecnologia e non gli sfugge mai nessuna novit&agrave; informatica. &Egrave; molto pratico ma gli capita di avere la testa per aria quando..osserva le stelle. &Egrave; lo smanettone del gruppo e pensa che tutte le soluzioni si trovino sul web.
 				</div>
-				<div class="picture leo" >
-					<span class="field">Nome:&nbsp; </span>
-					<span class="description">Leonardo, ma a lui piace essere chiamato Leo</span>
-					<br /> 
-					<span class="field">Et&agrave;:&nbsp;</span>
-					<span class="description">8 Anni</span>
-					<br /> 
-					<span class="field">Hobby:&nbsp;</span>
-					<span class="description">Astrofisica, Informatica e Videogiochi</span>
-					<br />
-					<span class="field">Aspirazioni:&nbsp;</span>
-					<span class="description">Diventare scienziato come la mamma</span>
-					<br />
-					<span class="field">Piatto preferito:&nbsp;</span>
-					<span class="description">Pizza con patatine</span>
-					<br/>
-					<div class="description lastDesc">Leo &egrave; sempre attivo e dinamico. Adora la tecnologia e non gli sfugge mai nessuna novit&agrave; informatica. &Egrave; molto pratico ma gli capita di avere la testa per aria quando..osserva le stelle. &Egrave; lo smanettone del gruppo e pensa che tutte le soluzioni si trovino sul web.
-					</div>
+			</div>
+			<div class="picture tilde" >
+				<span class="field">Nome:</span>
+				<span class="description">Tilde, Matilde solo nei momenti importanti</span>
+				<br /> 
+				<span class="field">Et&agrave;:</span>
+				<span class="description">6 Anni</span>
+				<br /> 
+				<span class="field">Hobby:</span>
+				<span class="description">Accudire i piccoli animali, pallavolo, computer</span>
+				<br />
+				<span class="field">Aspirazioni:</span>
+				<span class="description">Fare la veterinaria come il papà</span>
+				<br />
+				<span class="field">Piatto preferito:</span>
+				<span class="description">gelato fragola e cioccolato</span>
+				<br/>
+				<div class="description lastDesc">Tilde &egrave; dolce e sensibile. Le piace la compagnia e ogni occasione &egrave; buona per farsi nuovi amici. La incuriosiscono le novit&agrave; e le piace capire tutto, specialmente ci&ograve; che riguarda l'amatissimo mondo degli animali.
 				</div>
-				<div class="picture tilde" >
-					<span class="field">Nome:</span>
-					<span class="description">Tilde, Matilde solo nei momenti importanti</span>
-					<br /> 
-					<span class="field">Et&agrave;:</span>
-					<span class="description">6 Anni</span>
-					<br /> 
-					<span class="field">Hobby:</span>
-					<span class="description">Accudire i piccoli animali, pallavolo, computer</span>
-					<br />
-					<span class="field">Aspirazioni:</span>
-					<span class="description">Fare la veterinaria come il papà</span>
-					<br />
-					<span class="field">Piatto preferito:</span>
-					<span class="description">gelato fragola e cioccolato</span>
-					<br/>
-					<div class="description lastDesc">Tilde &egrave; dolce e sensibile. Le piace la compagnia e ogni occasione &egrave; buona per farsi nuovi amici. La incuriosiscono le novit&agrave; e le piace capire tutto, specialmente ci&ograve; che riguarda l'amatissimo mondo degli animali.
-					</div>
+			</div>
+			<div class="picture albert">
+				<span class="field">Nome:</span>
+				<span class="description">Albert</span>
+				<br /> 
+				<span class="field">Et&agrave;:</span>
+				<span class="description">26 Anni</span>
+				<br /> 
+				<span class="field">Hobby:</span>
+				<span class="description">Fotografia, viaggi e bicicletta</span>
+				<br />
+				<span class="field">Aspirazioni:</span>
+				<span class="description">Vincere il Nobel</span>
+				<br />
+				<span class="field">Piatto preferito:</span>
+				<span class="description">Lasagne della signora Nina</span>
+				<br/>
+				<div class="description lastDesc">Albert &egrave; socievole e solare. &Egrave; un grande studioso e la mattina corre entusiasta a lavoro. Ha una cultura sterminata ma non la ostenta anzi, la usa per aiutare gli altri.
 				</div>
-				<div class="picture albert">
-					<span class="field">Nome:</span>
-					<span class="description">Albert</span>
-					<br /> 
-					<span class="field">Et&agrave;:</span>
-					<span class="description">26 Anni</span>
-					<br /> 
-					<span class="field">Hobby:</span>
-					<span class="description">Fotografia, viaggi e bicicletta</span>
-					<br />
-					<span class="field">Aspirazioni:</span>
-					<span class="description">Vincere il Nobel</span>
-					<br />
-					<span class="field">Piatto preferito:</span>
-					<span class="description">Lasagne della signora Nina</span>
-					<br/>
-					<div class="description lastDesc">Albert &egrave; socievole e solare. &Egrave; un grande studioso e la mattina corre entusiasta a lavoro. Ha una cultura sterminata ma non la ostenta anzi, la usa per aiutare gli altri.
-					</div>
+			</div>
+			<div class="picture pixel">
+				<span class="field">Nome:</span>
+				<span class="description">Pixel</span>
+				<br /> 
+				<span class="field">Et&agrave;:</span>
+				<span class="description">4 Anni</span>
+				<br /> 
+				<span class="field">Hobby:</span>
+				<span class="description">dormire sopra il computer</span>
+				<br />
+				<span class="field">Aspirazioni:</span>
+				<span class="description">Rincorrere Jerry</span>
+				<br />
+				<span class="field">Piatto preferito:</span>
+				<span class="description">crocchette croccanti</span>
+				<br/>
+				<div class="description lastDesc">Pixel &egrave; curioso e gli piace esplorare il mondo, anche se adora tornare a casa e dormire sul computer di Tilde. Segue sempre la sua padroncina ovunque vada
 				</div>
-				<div class="picture pixel">
-					<span class="field">Nome:</span>
-					<span class="description">Pixel</span>
-					<br /> 
-					<span class="field">Et&agrave;:</span>
-					<span class="description">4 Anni</span>
-					<br /> 
-					<span class="field">Hobby:</span>
-					<span class="description">dormire sopra il computer</span>
-					<br />
-					<span class="field">Aspirazioni:</span>
-					<span class="description">Rincorrere Jerry</span>
-					<br />
-					<span class="field">Piatto preferito:</span>
-					<span class="description">crocchette croccanti</span>
-					<br/>
-					<div class="description lastDesc">Pixel &egrave; curioso e gli piace esplorare il mondo, anche se adora tornare a casa e dormire sul computer di Tilde. Segue sempre la sua padroncina ovunque vada
-					</div>
+			</div>
+			<div class="picture robocat">
+				<span class="field">Nome:</span>
+				<span class="description">Robocat</span>
+				<br /> 
+				<span class="field">Et&agrave;:</span>
+				<span class="description">1 Anno</span>
+				<br /> 
+				<span class="field">Hobby:</span>
+				<span class="description">Raccogliere Dati</span>
+				<br />
+				<span class="field">Aspirazioni:</span>
+				<span class="description">Robocat 2.0</span>
+				<br />
+				<span class="field">Piatto preferito:</span>
+				<span class="description">01000010 01001001 01010100</span><br/>
+				<div class="description lastDesc">Robocat ha le sembianze di una gattina ma &egrave; un sofisticato dispositivo in via di sperimentazione. Ha un cuore elettronico che pulsa...
 				</div>
-				<div class="picture robocat">
-					<span class="field">Nome:</span>
-					<span class="description">Robocat</span>
-					<br /> 
-					<span class="field">Et&agrave;:</span>
-					<span class="description">1 Anno</span>
-					<br /> 
-					<span class="field">Hobby:</span>
-					<span class="description">Raccogliere Dati</span>
-					<br />
-					<span class="field">Aspirazioni:</span>
-					<span class="description">Robocat 2.0</span>
-					<br />
-					<span class="field">Piatto preferito:</span>
-					<span class="description">11000100110100101110100</span><br/>
-					<div class="description lastDesc">Robocat ha le sembianze di una gattina ma &egrave; un sofisticato dispositivo in via di sperimentazione. Ha un cuore elettronico che pulsa...
-					</div>
-				</div>
-				<div class="picture description intro">
-					Chi è Pixel? Cosa potranno mai fare due ragazzini a Polaris, il <strong>Parco Scientifico e Tecnologico della Sardegna</strong>, tra computer e ricercatori?
-					Sfoglia le schede dei personaggi e vieni a scoprire la loro avventurosa storia al <strong>Festival della Scienza di Cagliari</strong>, all'<strong>Exmà</strong> dal 5 al 8 Novembre 2011.
-					Per info e prenotazioni clicca <a href="http://www.scienzasocietascienza.eu/">qui</a>.
-				</div>
+			</div>
+			<div class="picture description intro">
+				Chi è Pixel? Cosa potranno mai fare due ragazzini a Polaris, il <strong>Parco Scientifico e Tecnologico della Sardegna</strong>, tra computer e ricercatori?
+				Sfoglia le schede dei personaggi e vieni a scoprire la loro avventurosa storia al <strong>Festival della Scienza di Cagliari</strong>, all'<strong>Exmà</strong> dal 5 al 8 Novembre 2011.
+				Per info e prenotazioni clicca <a href="http://www.scienzasocietascienza.eu/">qui</a>.
+			</div>
+			<div class="picture description credits">
+					<em>"Alla Ricerca del Pixel perduto"</em> &egrave; una storia realizzata per un'applicazione
+					interattiva sviluppata dal Laboratorio OMC e dal CRS4.<br />
+					<a href="http://www.labomc.it/pixelstory">http://www.labomc.it/pixelstory</a><br />
+					Storia e personaggi ideati da <strong>Gavino Paddeu</strong> e <strong>Selene Uras</strong> con la collaborazione di <strong>Ivan Marcialis</strong>.
+					Applicazione interattiva a cura del <a href="http://www.labomc.it">Lab OMC</a> (Massimo Deriu e Daniele Ardu).<br />
+					Sito web a cura di <strong>Simone Kalb</strong>.<br />
+					Animazioni, character design e progetto grafico a cura di  <a href="http://www.seies.it">Seiès Comunicazione & Design</a>, Cagliari.<br />
+			</div>
+			<div class="picture description video">
+					I video e i testi dell'intera storia saranno presto disponibili online.<br /> 
+					<p style="margin-top:1.2em">Visita nuovamente questo sito dopo l'<strong>8 novembre</strong>.</br>Grazie.</p>
+			</div>
 			<!-- End Header Section -->		
-		</div>
+		</div>	
 		<!-- Main Content Section -->
-	</div>		
+	</div>
+	<img id="photo_group" src="img/photo_group_no_footer_crop.png" alt="Photo Group" />
+		<div class="footer"> 
+			<a href="http://www.sardegnaricerche.it">
+			<img src="img/sardegna_ricerche.png" alt="logos sr"/></a>
+			<a href="http://www.labomc.it">
+			<img src="img/labomc.png" alt="logos labomc"/></a>
+			<a href="http://www.crs4.it">
+			<img src="img/crs4.png" alt="logos crs4"/></a>
+			<!-- Social Networks Icons --> 
+			<div id="buttons">
+				<img id="home" src="img/home.png" alt="Home Button" />
+				<img id="credits" src="img/credits.png" alt="Credits Button" />
+				<img id="video" src="img/video.png" alt="Video Button" />
+			</div>
+			<div id="social">
+				<div class="fb-like" data-href="http://labomc.it/pixelstory" data-send="true" data-layout="box_count" data-width="200" data-show-faces="false" style="position:absolute; top:10px; left:10px">
+				</div>				
+				<a href="https://www.facebook.com/event.php?eid=300617296620968" >
+					<img src="img/fb.png" alt="fb" id="facebook" />
+				</a>
+				<a href="https://twitter.com/#!/openmediacenter" >
+					<img src="img/twitter.png" alt="tweeter" id="twitter" />
+				</a>
+			</div>
+			
+			<!-- End Social Network Section -->
+			</div>
+		</div>
 	</body>
 </html>	
